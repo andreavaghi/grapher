@@ -1,1 +1,64 @@
-/* CSS declarations go here */
+body {
+	font-family: Arial;
+	background: #f4f4f4;
+}
+
+#login_bar {
+	position: fixed;
+	padding: 20px 30px 0 0;
+	right: 0;
+	top: 0;
+}
+
+.main_container {
+	width: 900px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.content {
+	background: #fff;
+}
+
+.title_link {
+	font-size: 15px;
+	vertical-align: 4px;
+}
+
+a {
+	text-decoration: none;
+	color: #436690;
+}
+
+h1 {
+	font-size: 65px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 35px;
+	display: inline;
+}
+
+h4, h5 {
+	margin-bottom: 10px;
+	display: inline-block;
+	padding-left: 13px;
+}
+
+h4 {
+	font-size: 23px;
+	vertical-align: -2px;
+}
+
+#home_image {
+	display: inline-block;
+	width: 500px;
+	vertical-align: top;
+}
+
+#home_description {
+	display: inline-block;
+	width: 340px;
+	padding: 20px;
+}
