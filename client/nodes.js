@@ -1,7 +1,7 @@
 Grapher.Nodes = {
 	create : function(text, color, position, graph){
 		NodesModel.insert({
-			"text" 		: text
+			"text" 		: text,
 			"color" 	: color,
 			"position" 	: position,
 			"graph" 	: graph
@@ -26,7 +26,7 @@ Grapher.Nodes = {
 
 	change_color : function(node, new_color) {
 		NodesModel.update({ "_id" : node }, {
-			$set : { "color", new_color }
+			$set : { "color" : new_color }
 		});
 	}
 }

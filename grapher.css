@@ -62,3 +62,28 @@ h4 {
 	width: 340px;
 	padding: 20px;
 }
+
+#graph_content {
+	padding: 30px;
+}
+
+#graphs_header {
+	width: 840px;
+	height: 50px;
+	border-bottom: 1px solid #828282;
+	margin-bottom: 30px;
+}
+
+#graphs {
+	width: 100%;
+}
+
+.button_col {
+	width: 100px;
+	text-align: right;
+}
+
+.graph_title {
+	font-size: 19px;
+	line-height: 50px;
+}

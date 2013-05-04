@@ -1,0 +1,42 @@
+<template name="graphs_page">
+	<div id="login_bar">
+		{{loginButtons align="right"}}
+	</div>
+	<div class="main_container">
+		<h1>Grapher</h1>
+		<div class="content" id="graph_content">
+			<div id="graphs_header">
+				<h3>Graphs</h3>
+				<span class="title_link">
+					- <a href="#" id="new_graph"> Add a graph</a>
+				</span>
+			</div>
+			{{#if has_graphs}}
+				<table id="graphs">
+					<thead>
+						<tr>
+							<th></th>
+							<th class="button_col"></th>
+							<th class="button_col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#each graphs}}
+							{{> graph_row}}
+						{{/each}}
+					</tbody>
+				</table>
+			{{else}}
+				<p>You currently have no graphs!</p>
+			{{/if}}
+		</div>
+	</div>	
+</template>
+
+<template name="graph_row">
+	<tr>
+		<td><span class="graph_title">{{name}}</span></td>
+		<td class="button_col"><a class="open_graph" href="#">Open</a></td>
+		<td class="button_col"><a class="delete_graph" href="#">Delete</a></td>
+	</tr>
+</template>
