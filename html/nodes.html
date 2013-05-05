@@ -1,0 +1,44 @@
+<template name="nodes_page">
+	{{> node_section}}
+	<div id="header">
+		<div id="login_bar">
+			{{loginButtons align="right"}}
+		</div>
+		<h3>Grapher</h3>
+		<span class="title_link">
+			- <a href="#" id="go_back"> Go Back to Graphs</a>
+		</span>
+		<div id="graph_main_title">
+			<h2>{{graph_name}}</h2>
+		</div>
+		<h4><a href="#" id="new_node">New Node</a></h4>
+		<h5>Colors: </h5>
+		<div class="color_box red" color="red"></div>
+		<div class="color_box blue" color="blue"></div>
+		<div class="color_box orange" color="orange"></div>
+		<div class="color_box green" color="green"></div>
+		<div class="color_box black" color="black"></div>
+	</div>
+</template>
+
+<template name="node_section">
+	<div id="node_area">
+		{{#each nodes}}
+			{{> node}}
+		{{/each}}
+		{{#constant}}
+		<svg id="relationships">
+			<line id="mouse_line" />
+		</svg>
+		{{/constant}}
+	</div>
+</template>
+
+<template name="node">
+	<div id="{{_id}}" class="node_border" style="top:{{position.y}}px; left:{{position.x}}px;">
+		<div class="node {{color}} {{selected}}">
+			<span class="node_text">{{text}}</span>
+			<span class="remove_node">x</span>
+		</div>
+	</div>
+</template>

@@ -87,3 +87,84 @@ h4 {
 	font-size: 19px;
 	line-height: 50px;
 }
+
+#header{
+    height: 180px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #FFF;
+    border-bottom: 4px solid #828282;
+    padding-bottom: 0;
+}
+
+.red{ background: #CC0000; }
+.blue{ background: #2956B2; }
+.green{ background: #7DBD00; }
+.orange{ background: #FEB729; }
+.black{ background: #000; }
+
+.color_box{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: -5px;
+}
+
+#node_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.node_border{
+	padding: 10px;
+	background: rgba(0,0,0,0);
+	border-radius: 8px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.node_border:hover{ 
+	background: rgba(0,0,0,0.4); 
+}
+
+.node_selected{ 
+	border: 6px solid #333; 
+}
+
+.node{
+	position: relative;
+	min-width: 40px;
+	min-height: 20px;
+	border-radius: 8px;
+	font-size: 18px;
+	text-align: center;
+	color: #FFF;
+}
+
+.node_text{
+	padding: 15px 30px;
+	line-height: 45px
+}
+
+.remove_node{
+	font-size: 13px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+
+.remove_node:hover{ 
+	color: #FFF; 
+}
+
+#relationships{
+	width: 100%;
+	height: 100%;
+}
