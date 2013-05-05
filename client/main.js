@@ -166,7 +166,14 @@ function render_lines() {
 }
 
 Template.node_section.rendered = function() {
-	render_lines();
+	var nodes = NodesModel.find({}).fetch();
+	var node_ids = new Array();
+	for(var k in nodes) {
+		node_ids.push(nodes[k]._id);
+	}
+	Meteor.subscribe("relationships", node_ids, function() {
+		render_lines();
+	});
 }
 
 function delete_relationship (e) {

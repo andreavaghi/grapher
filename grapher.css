@@ -99,6 +99,10 @@ h4 {
     padding-bottom: 0;
 }
 
+#graph_main_title {
+	text-align: center;
+}
+
 .red{ background: #CC0000; }
 .blue{ background: #2956B2; }
 .green{ background: #7DBD00; }
